@@ -1226,7 +1226,7 @@ end</LUACode>
   <WindowControls>
     <WindowName>charsheet_inventory</WindowName>
     <ControlName>idelete_header</ControlName>
-    <ZIndex>13</ZIndex>
+    <ZIndex>11</ZIndex>
     <ControlClass>FGCustomControl</ControlClass>
     <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
       {"Name":"BackgroundColor","Value":{"@xsi:type":"xsd:string","#text":"0;0;0;0"}},
@@ -1457,7 +1457,23 @@ end</LUACode>
       {"Name":"XPos","Value":{"@xsi:type":"xsd:int","#text":"466"}},
       {"Name":"YPos","Value":{"@xsi:type":"xsd:int","#text":"10"}}
 ]}}</Definition>
-    <LUACode />
+    <LUACode>
+function onValueChanged()
+	super.onValueChanged();
+
+	-- This template gets rid of the relative positioning of the headers, 
+	-- so their position must be adjusted manually when the delete button is shown and hidden.	
+	if getValue() == 1 then
+		window.location_label.setStaticBounds(-253, 12, 80, 20);
+		window.weight_label.setStaticBounds(-160, 12, 30, 20);
+		window.carried_header.setStaticBounds(-121, 12, 20, 20);
+	else
+		window.location_label.setStaticBounds(-233, 12, 80, 20);
+		window.weight_label.setStaticBounds(-140, 12, 30, 20);
+		window.carried_header.setStaticBounds(-101, 12, 20, 20);
+	end
+end
+</LUACode>
     <GroupIndex>0</GroupIndex>
   </WindowControls>
   <WindowControls>
