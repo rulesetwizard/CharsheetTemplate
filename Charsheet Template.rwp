@@ -3,9 +3,9 @@
   <RulesetProperties>
     <Name>Charsheet Template</Name>
     <CompilationType>Extension</CompilationType>
-    <Description />
-    <Author />
-    <Website />
+    <Description>CoreRGP Character sheet template for Ruleset Wizard</Description>
+    <Author>Psicodelix</Author>
+    <Website>https://www.rulesetwizard.com</Website>
     <Version>1</Version>
     <Release>0</Release>
     <RulesetWizardVersion>0.7.11</RulesetWizardVersion>
