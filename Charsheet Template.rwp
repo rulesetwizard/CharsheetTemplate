@@ -3516,13 +3516,13 @@ function onValueChanged()
 	-- This template gets rid of the relative positioning of the headers, 
 	-- so their position must be adjusted manually when the delete button is shown and hidden.	
 	if getValue() == 1 then
-		window.location_label.setStaticBounds(-253, 12, 80, 20);
-		window.weight_label.setStaticBounds(-160, 12, 30, 20);
-		window.carried_header.setStaticBounds(-121, 12, 20, 20);
+		window.location_label.setStaticBounds(-241, 12, 80, 20);
+		window.weight_label.setStaticBounds(-157, 12, 30, 20);
+		window.carried_header.setStaticBounds(-119, 12, 20, 20);
 	else
-		window.location_label.setStaticBounds(-233, 12, 80, 20);
-		window.weight_label.setStaticBounds(-140, 12, 30, 20);
-		window.carried_header.setStaticBounds(-101, 12, 20, 20);
+		window.location_label.setStaticBounds(-221, 12, 80, 20);
+		window.weight_label.setStaticBounds(-137, 12, 30, 20);
+		window.carried_header.setStaticBounds(-99, 12, 20, 20);
 	end
 end
 </LUACode>
